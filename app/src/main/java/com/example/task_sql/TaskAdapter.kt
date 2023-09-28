@@ -43,6 +43,10 @@ class TaskAdapter(val viewModel: TaskViewModel, private var items: List<Task> = 
             viewModel.remove(items[position])
             notifyDataSetChanged()
         }
+        //RD_hw_task_19_SQL
+        //В TaskAdapter є коментарі до момоентів встановлення галочки та видалення даних з SQL
+        //Прокоментуйте, будь-ласка, що з того нормально, а що не припустимо та як саме треба було зробити
+
     }
 
     fun updateItems(itemsToUpdate: List<Task>) {
