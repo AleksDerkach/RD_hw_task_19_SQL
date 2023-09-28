@@ -7,4 +7,4 @@ import androidx.room.PrimaryKey
 // Таблиці
 @Entity (tableName = "task")
 data class Task(@PrimaryKey (autoGenerate = true) val id: Int? = null,
-                val task:String, val doneFlag:Boolean)
+                val task:String, var doneFlag:Boolean)

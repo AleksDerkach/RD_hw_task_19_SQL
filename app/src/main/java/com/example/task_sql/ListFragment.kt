@@ -26,9 +26,10 @@ class ListFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = TaskAdapter()
-
         viewModel = ViewModelProvider(requireActivity()).get(TaskViewModel::class.java)
+
+        val adapter = TaskAdapter(viewModel)
+
         val fab:FloatingActionButton = view.findViewById(R.id.fab)
         val listView:RecyclerView = view.findViewById(R.id.list)
 

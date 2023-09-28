@@ -5,7 +5,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModel
 
-class TaskViewModel:ViewModel() {
+
+class TaskViewModel: ViewModel() {
     private val repo = MyApp.getApp().repo
     private val _listState = MutableLiveData<ListState>(ListState.EmptyList)
     val listState: LiveData<ListState> = _listState
